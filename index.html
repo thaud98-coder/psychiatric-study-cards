@@ -1,0 +1,98 @@
+<!doctype html><html lang=ko><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>정신간호 암기카드</title><style>*{box-sizing:border-box}body{margin:0;background:#f3f6fc;color:#202d46;font:16px system-ui,-apple-system,sans-serif}.app{max-width:640px;margin:auto;padding:18px 16px 70px}h1{font-size:23px;margin:4px 0}p{line-height:1.5}.dim{color:#63738d;font-size:14px}.box,.card{border:1px solid #dfe7f3;background:white;border-radius:18px;padding:18px;box-shadow:0 3px 14px #2334570a;margin:15px 0}.tabs,.row{display:flex;gap:8px}.tabs>*{flex:1}.card{width:100%;min-height:230px;text-align:left;display:flex;flex-direction:column;justify-content:center;gap:12px}.card h2{font-size:21px;line-height:1.5}.answer{font-size:24px;color:#235bc3;font-weight:750}button,input,select{font:inherit}button{border:1px solid #ced9ed;border-radius:12px;background:white;color:#273d63;padding:11px;min-height:46px;cursor:pointer}button.active,button.blue{background:#335dcc;color:white;border-color:#335dcc}button.green{background:#e8f8ed;color:#167044}button.orange{background:#fff0d9;color:#915400}button:disabled{opacity:.5}.row{flex-wrap:wrap}select,input{width:100%;padding:12px;border:1px solid #ccd6e5;border-radius:12px;background:white;min-height:47px}.filters{display:grid;grid-template-columns:1fr 1fr;gap:8px}.tag{font-size:13px;color:#526fa3}.feedback{background:#eaf0ff;border-radius:12px;padding:14px;margin:12px 0}.count{font-size:13px;color:#65748d}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #9bc0ff}</style><div class=app><h1>🧠 정신간호 암기카드</h1><p class=dim>2장 신경생물학 · 3장 정신심리학</p><div class=tabs><button id=cards class=active>카드</button><button id=typing>받아쓰기</button></div><div class=box><div class=filters><select id=chapter aria-label=학습범위><option value=전체>전체 범위<option value=2장>2장<option value=3장>3장</select><select id=filter aria-label=학습대상><option value=전체>전체 항목<option value=헷갈려요>헷갈려요만<option value=미분류>미분류만</select></div><p id=stats class=count></p></div><div id=view></div><p class=dim>학습 상태는 이 기기의 브라우저에 저장됩니다. 받아쓰기 채점은 대표 용어 기준이며, 의미가 맞으면 직접 정답으로 인정할 수 있습니다.</p></div><script>const lines=`2장|뇌 구조|좌우 대뇌반구를 연결하는 신경섬유 집단은?|뇌량|corpus callosum
+2장|뇌 구조|고등 지적 기능을 담당하는 회백질 층은?|대뇌피질|
+2장|대뇌엽|이성·주의·판단·수의운동에 관여하는 엽은?|전두엽|
+2장|대뇌엽|체감각 해석·공간 지남력에 관여하는 엽은?|두정엽|
+2장|대뇌엽|청각·후각·기억·언어 이해에 관여하는 엽은?|측두엽|
+2장|대뇌엽|시각중추가 있는 엽은?|후두엽|
+2장|언어|언어 생성에 중요한 영역은?|브로카 영역|브로카
+2장|언어|언어 이해에 중요한 영역은?|베르니케 영역|베르니케
+2장|변연계|정서와 본능적 행동에 관련된 계통은?|변연계|
+2장|변연계|감각·운동·연합 정보를 대뇌로 중계하는 부위는?|시상|
+2장|변연계|항상성·체온·식욕·자율신경 조절 부위는?|시상하부|
+2장|변연계|공포·불안·분노 조절과 관련된 부위는?|편도체|
+2장|변연계|단기기억을 장기기억으로 전환하는 데 관여하는 부위는?|해마|
+2장|운동·뇌간|추체외로의 중요 중추로 운동을 평가·수정하는 곳은?|기저핵|
+2장|운동·뇌간|도파민을 생성하는 중뇌의 구조는?|흑질|
+2장|운동·뇌간|노르에피네프린을 생산하는 교의 구조는?|청반|
+2장|운동·뇌간|호흡·심박동 등을 담당하는 생명중추는?|연수|
+2장|운동·뇌간|각성과 수면-각성 주기에 관여하는 계통은?|망상활성계|망상체
+2장|운동·뇌간|균형·평형·자세·운동 협응에 관여하는 구조는?|소뇌|
+2장|전달물질|과다는 조현병, 부족은 파킨슨증후군과 연관된 전달물질은?|도파민|dopamine
+2장|전달물질|주의·각성·투쟁-도피와 관련, 과다는 조증·결핍은 우울증상과 연관된 물질은?|노르에피네프린|norepinephrine
+2장|전달물질|기분·수면·불안·강박과 관련된 물질은?|세로토닌|serotonin
+2장|전달물질|기억·수면·각성·근육활동에 관여하는 물질은?|아세틸콜린|acetylcholine
+2장|전달물질|대표적인 흥분성 아미노산 신경전달물질은?|글루타민산|글루탐산,glutamate
+2장|전달물질|벤조디아제핀 진정효과와 관련된 억제성 물질은?|GABA|가바
+2장|전달물질|통증·감정과 연관된 흥분성 물질은?|물질 P|substance p
+2장|약물|항정신병약물의 추체외로 증상 약자는?|EPS|추체외로증상
+2장|검사|뇌파검사의 약자는?|EEG|
+2장|검사|전산화단층촬영의 약자는?|CT|
+2장|검사|자기공명영상의 약자는?|MRI|
+2장|검사|양전자방출단층촬영의 약자는?|PET|
+2장|검사|단일광자방출전산화단층촬영의 약자는?|SPECT|
+2장|검사|수면다원검사의 약자는?|PSG|
+3장|정신역동|행동에는 심리적 원인과 목적이 있다는 관점은?|정신결정론|
+3장|의식 수준|지금 알고 느끼는 생각과 감각의 수준은?|의식|
+3장|의식 수준|주의하면 떠올릴 수 있는 기억의 수준은?|전의식|
+3장|의식 수준|억압된 욕구·감정·갈등이 저장된 수준은?|무의식|
+3장|성격 구조|쾌락원칙에 따른 본능적 충동의 구조는?|이드|id,원초아
+3장|성격 구조|현실원칙에 따라 충동과 현실을 조정하는 구조는?|자아|ego
+3장|성격 구조|도덕원칙을 따르는 양심·규범의 구조는?|초자아|superego
+3장|불안|실제 외부 위험에 대한 불안은?|현실불안|
+3장|불안|이드 충동이 통제되지 않을까 두려운 불안은?|신경증적 불안|
+3장|불안|초자아 기준을 어겼다는 죄책감에서 오는 불안은?|도덕적 불안|
+3장|정신분석|떠오르는 생각을 검열 없이 말하는 기법은?|자유연상|
+3장|정신분석|과거 관계감정이 대상자에게서 치료자에게 옮겨지는 현상은?|전이|
+3장|정신분석|치료자의 과거 경험·감정이 대상자에게 영향을 미치는 것은?|역전이|
+3장|정신분석|무의식적 갈등과 반복 양상을 자각하는 것은?|통찰|
+3장|정신분석|통찰을 반복적으로 경험하며 변화시키는 과정은?|훈습|
+3장|방어기전|고통스러운 생각·감정을 무의식으로 밀어내는 것은?|억압|
+3장|방어기전|고통스러운 생각을 의식적으로 미루는 것은?|억제|
+3장|방어기전|암 진단을 받고 검사가 틀렸다고 현실을 인정하지 않는 것은?|부정|
+3장|방어기전|미운 사람에게 지나치게 친절하게 행동하는 것은?|반동형성|
+3장|방어기전|상처 준 뒤 과도한 선물로 앞선 행동을 없애려는 것은?|취소|
+3장|방어기전|자신의 받아들이기 힘든 감정을 상대의 것으로 보는 것은?|투사|
+3장|방어기전|타인의 가치·태도를 내면화하는 것은?|함입|
+3장|방어기전|투사한 감정대로 상대가 반응하도록 압박하는 것은?|투사적 동일시|
+3장|방어기전|실제 동기 대신 그럴듯한 설명으로 정당화하는 것은?|합리화|
+3장|방어기전|감정을 피하고 지적 분석에만 몰두하는 것은?|주지화|
+3장|방어기전|사실과 연결된 감정을 분리하는 것은?|격리|
+3장|방어기전|교수에게 혼난 뒤 동생에게 화내는 것은?|전치|
+3장|방어기전|원하는 대상을 얻지 못해 비슷한 대상으로 만족하는 것은?|대리형성|
+3장|방어기전|입원 아동이 다시 손가락을 빠는 것은?|퇴행|
+3장|방어기전|특정 발달단계 행동 양상에 머무는 것은?|고착|
+3장|방어기전|심리갈등이 감각기관·수의근 증상으로 표현되는 것은?|전환|
+3장|방어기전|심리갈등이 여러 신체적 불편으로 표현되는 것은?|신체화|
+3장|방어기전|사람을 전적으로 좋은 사람 또는 나쁜 사람으로 나누는 것은?|분리|
+3장|방어기전|상대를 완벽한 존재로 보는 것은?|이상화|
+3장|방어기전|상대의 가치를 지나치게 깎아내리는 것은?|평가절하|
+3장|방어기전|감정을 말로 다루기 전에 충동적으로 행동하는 것은?|행동화|
+3장|방어기전|분노를 지연·고의적 실수 등으로 간접 표현하는 것은?|수동공격|
+3장|방어기전|힘든 경험에서 의식·기억·정체감이 분리되는 것은?|해리|
+3장|방어기전|무의식 내용이 의식화되는 것을 막는 것은?|저항|
+3장|방어기전|충동을 예술·운동·일 등 유용한 활동으로 바꾸는 것은?|승화|
+3장|방어기전|현실을 부정하지 않으며 긴장을 완화하는 성숙한 방어는?|유머|
+3장|방어기전|타인을 도우며 자신의 갈등도 건설적으로 다루는 것은?|이타주의|
+3장|Freud|출생~18개월, 입을 통한 만족 단계는?|구강기|
+3장|Freud|18~36개월, 배변훈련과 통제의 단계는?|항문기|
+3장|Freud|3~6세, 성차 인식과 부모 동일시의 단계는?|남근기|
+3장|Freud|6~12세, 학습과 또래활동의 단계는?|잠복기|
+3장|Freud|청소년 이후 성숙한 관계의 단계는?|성기기|
+3장|Erikson|영아기의 발달 과업은?|신뢰감 대 불신감|신뢰 대 불신
+3장|Erikson|유아기의 발달 과업은?|자율성 대 수치심|
+3장|Erikson|학령전기의 발달 과업은?|주도성 대 죄책감|
+3장|Erikson|학령기의 발달 과업은?|근면성 대 열등감|
+3장|Erikson|청소년기의 발달 과업은?|정체감 대 역할혼미|
+3장|Erikson|성인초기의 발달 과업은?|친밀감 대 고립|
+3장|Erikson|성인중기의 발달 과업은?|생산성 대 침체|
+3장|Erikson|노년기의 발달 과업은?|통합감 대 절망|
+3장|Piaget|0~2세, 대상영속성이 발달하는 단계는?|감각운동기|
+3장|Piaget|2~6세, 자기중심성이 특징인 단계는?|전조작기|
+3장|Piaget|7~11세, 보존개념과 구체적 논리 단계는?|구체적 조작기|
+3장|Piaget|12세 이후 추상적·가설적 사고 단계는?|형식적 조작기|
+3장|Sullivan|성격은 반복되는 무엇으로 형성되는가?|대인관계 패턴|
+3장|Sullivan|청소년전기(9~12세)의 핵심 관계는?|동성친구와 친교|
+3장|Sullivan|청소년중기(12~17세)의 핵심 과업은?|친밀감과 애정|
+3장|Mahler|1~5개월 양육자와 하나처럼 경험하는 단계는?|공생기|
+3장|Mahler|16~24개월 독립 욕구와 분리불안이 공존하는 단계는?|화해접근기|
+3장|Mahler|25~36개월 부재한 양육자의 안정적 내적 표상을 유지하는 것은?|대상항상성|`;const data=lines.trim().split('\n').map((l,i)=>{let [ch,cat,q,a,alias]=l.split('|');return{id:i,ch,cat,q,a,alias:alias?alias.split(','):[]}});let saved={};try{saved=JSON.parse(localStorage.getItem('study-mobile-v2')||'{}')}catch{}let status=saved.status||{},score=saved.score||[0,0],mode='cards',deck=[],i=0,flipped=false,graded=false,ok=false,typed='';const $=id=>document.getElementById(id),save=()=>{try{localStorage.setItem('study-mobile-v2',JSON.stringify({status,score}))}catch{}},escape=s=>String(s).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c])),normalize=s=>s.normalize('NFKC').toLowerCase().replace(/[\s·.,()_\-/]/g,''),shuffle=a=>[...a].sort(()=>Math.random()-.5);function build(){let ch=$('chapter').value,f=$('filter').value;deck=shuffle(data.filter(x=>(ch==='전체'||x.ch===ch)&&(f==='전체'||f==='헷갈려요'&&status[x.id]==='헷갈려요'||f==='미분류'&&!status[x.id])));i=0;reset()}function reset(){flipped=false;graded=false;typed='';draw()}function next(){if(i+1>=deck.length){build()}else{i++;reset()}}function draw(){let x=deck[i];$('cards').classList.toggle('active',mode==='cards');$('typing').classList.toggle('active',mode==='typing');$('stats').textContent=`${deck.length}문항 · 외웠어요 ${Object.values(status).filter(s=>s==='외웠어요').length} · 헷갈려요 ${Object.values(status).filter(s=>s==='헷갈려요').length} · 받아쓰기 정답 ${score[0]}/${score[1]}`;if(!x){$('view').innerHTML='<div class=box>해당하는 문항이 없습니다. 학습 대상을 바꿔 주세요.</div>';return}let top=`<p class=count>${i+1} / ${deck.length}</p>`;if(mode==='cards'){$('view').innerHTML=top+`<button class=card id=flip><span class=tag>${escape(x.ch)} · ${escape(x.cat)}</span><h2>${escape(x.q)}</h2>${flipped?`<span class=answer>${escape(x.a)}</span>`:'<span class=dim>카드를 탭해서 정답 확인 ↺</span>'}</button><div class=row><button class=orange id=confused ${flipped?'':'disabled'}>헷갈려요</button><button class=green id=known ${flipped?'':'disabled'}>외웠어요</button><button id=skip>건너뛰기 →</button></div>`;$('flip').onclick=()=>{flipped=!flipped;draw()};$('skip').onclick=next;if(flipped){$('confused').onclick=()=>{status[x.id]='헷갈려요';save();next()};$('known').onclick=()=>{status[x.id]='외웠어요';save();next()}}return}$('view').innerHTML=top+`<div class=card><span class=tag>${escape(x.ch)} · ${escape(x.cat)}</span><h2>${escape(x.q)}</h2></div><form id=form><label for=answer>정답 입력</label><input id=answer autocomplete=off autocapitalize=off spellcheck=false placeholder='핵심 용어를 입력하세요' value='${escape(typed)}' ${graded?'disabled':''}><p class=row><button class=blue ${graded?'disabled':''}>채점하기</button>${graded?'<button id=next type=button>다음 →</button>':''}</p></form>${graded?`<div class=feedback>${ok?'✅ 정답!':'❌ 정답: '+escape(x.a)}${ok?'':'<br><button id=override>표현만 달라요 · 정답 인정</button>'}</div>`:''}`;if(graded){$('next').onclick=next;if(!ok)$('override').onclick=()=>{score[0]++;ok=true;save();draw()}}else $('form').onsubmit=e=>{e.preventDefault();typed=$('answer').value.trim();if(!typed)return;ok=[x.a,...x.alias].some(a=>normalize(a)===normalize(typed));score[1]++;if(ok)score[0]++;graded=true;save();draw()}}$('cards').onclick=()=>{mode='cards';reset()};$('typing').onclick=()=>{mode='typing';reset()};$('chapter').onchange=build;$('filter').onchange=build;build();</script></html>
